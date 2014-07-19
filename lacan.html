@@ -369,7 +369,7 @@
   {block:ifShowRSS}<li><a href="{RSS}"><i class="fa fa-rss"></i></a></li>{/block:ifShowRSS}
   {block:ifEmail}<li><a href="mailto:{text:Email}"><i class="fa fa-envelope-o"></i></a></li>{/block:ifEmail}
   {block:ifFacebook}<li><a href="{text:Facebook}"><i class="fa fa-facebook"></i></a></li>{/block:ifFacebook}
-  {block:ifGooglePlus}<li><a href="{text:Google Plus}"><i class="fa fa-google-plus"></i></a></li>{/block:ifGooglePlus}
+  {block:ifGooglePlus}<li><a href="{text:Google Plus}?rel=author" rel="me"><i class="fa fa-google-plus"></i></a></li>{/block:ifGooglePlus}
   {block:Twitter}<li><a href="http://twitter.com/{TwitterUsername}"><i class="fa fa-twitter"></i></a></li>{/block:Twitter}
   {block:ifLinkedIn}<li><a href="{text:LinkedIn}"><i class="fa fa-linkedin"></i></a></li>{/block:ifLinkedIn}
   {block:ifGithub}<li><a href="{text:Github}"><i class="fa fa-github"></i></a></li>{/block:ifGithub}
@@ -502,7 +502,7 @@
   {block:PermalinkPage}
     {block:ifShowSharingOptions}<ul class="share">
       <li><strong>{lang:Share this}</strong>:</li>
-      {block:ifEmail}<li><a href="mailto:{text:Email}?Body={Permalink}"><i class="fa fa-envelope-o"></i></a></li>{/block:ifEmail}
+      <li><a href="mailto:?Body={Permalink}"><i class="fa fa-envelope-o"></i></a></li>
       <li><a href="http://www.facebook.com/sharer.php?u={Permalink}" target="_blank"><i class="fa fa-facebook"></i></a></li>
       <li><a href="https://plus.google.com/share?url={Permalink}" target="_blank"><i class="fa fa-google-plus"></i></a></li>
       <li><a href="http://twitter.com/share?url={Permalink}" target="_blank"><i class="fa fa-twitter"></i></a></li>
@@ -690,5 +690,6 @@ $(document).ready(function() {
   </script>
   <script src="http://static.tumblr.com/pbrz3jn/jicn8xvvj/googleanalytics.js"></script>
 {/block:IfGoogleAnalyticsID}
+
 </body>
 </html>
