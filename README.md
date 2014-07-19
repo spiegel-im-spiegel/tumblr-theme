@@ -44,8 +44,10 @@ This theme is licenced under [CC-BY](http://creativecommons.org/licenses/by/4.0/
 * [Creating a custom HTML theme | Tumblr](https://www.tumblr.com/docs/en/custom_themes)
 * [Bootstrap CDN](http://www.bootstrapcdn.com/)
   + [FortAwesome/Font-Awesome](https://github.com/FortAwesome/Font-Awesome) : 各サービスのアイコンはここのを使っています。
-* [jQuery Photoset Grid - Style Hatch](http://stylehatch.github.io/photoset-grid/)
-  + [stylehatch/photoset-grid](https://github.com/stylehatch/photoset-grid/)
+* [jQuery](http://jquery.com/)
+  + [jquery/jquery](https://github.com/jquery/jquery)
+  + [jQuery Photoset Grid - Style Hatch](http://stylehatch.github.io/photoset-grid/)
+    - [stylehatch/photoset-grid](https://github.com/stylehatch/photoset-grid/)
 * [ZEN 2.0 - Tumblrで普通に日記を書く用途にこだわったTumblrテーマ](http://sanographix.github.io/tumblr/zen/)
   + [sanographix/tumblr](https://github.com/sanographix/tumblr)
 * [Platform Updates: New Open Graph Tags for Media Publishers and More](https://developers.facebook.com/blog/post/2013/06/19/platform-updates--new-open-graph-tags-for-media-publishers-and-more/)
