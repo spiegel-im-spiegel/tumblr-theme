@@ -1,7 +1,6 @@
 # Tumblr テーマ
 
----
-HTML 勉強がてら Tumblr のテーマを自分で作ってみることにしました。
+HTML の勉強がてら Tumblr のテーマを自分で作ってみることにしました。
 
 ## テーマ Lacan
 lacan.html
@@ -39,6 +38,27 @@ This theme is licenced under [CC-BY](http://creativecommons.org/licenses/by/4.0/
 * **img/beach3.jpg** : おまけのテーマ画像です。夏向きのを選んでみました。オリジナルは [Flickr] [1] にあります。
 
 [1]: https://www.flickr.com/photos/spiegel/32118886/
+
+## 参考にしたサイト
+
+* [Creating a custom HTML theme | Tumblr](https://www.tumblr.com/docs/en/custom_themes)
+* [Bootstrap CDN](http://www.bootstrapcdn.com/)
+  + [FortAwesome/Font-Awesome](https://github.com/FortAwesome/Font-Awesome) : 各サービスのアイコンはここのを使っています。
+* [jQuery Photoset Grid - Style Hatch](http://stylehatch.github.io/photoset-grid/)
+  + [stylehatch/photoset-grid](https://github.com/stylehatch/photoset-grid/)
+* [ZEN 2.0 - Tumblrで普通に日記を書く用途にこだわったTumblrテーマ](http://sanographix.github.io/tumblr/zen/)
+  + [sanographix/tumblr](https://github.com/sanographix/tumblr)
+* [Platform Updates: New Open Graph Tags for Media Publishers and More](https://developers.facebook.com/blog/post/2013/06/19/platform-updates--new-open-graph-tags-for-media-publishers-and-more/)
+* [Twitterカード | Twitter Developers](https://dev.twitter.com/ja/docs/cards)
+  + [https://dev.twitter.com/docs/cards/validation/validator](https://dev.twitter.com/docs/cards/validation/validator); 検証には WebKit 系のブラウザが必要。
+
+結局 Twitter Cards はなんだかよく分からなかった。
+そもそも Twitter Cards って何者？ metadata や RDFa とかじゃないよね。
+microformats の一種？
+
+### おまけ
+
+* [Online Markdown Editor](http://www.ctrlshift.net/project/markdowneditor/); Markdown が覚えられないので助かる。
 
 ---
 Written and revised by Spiegel, 2014
