@@ -51,30 +51,24 @@
 <meta name="text:Google Analytics ID" content="">
 <meta name="text:Disqus Shortname" content="">
 
-<meta name="twitter:app:name:iphone" content="Tumblr" >
-<meta name="twitter:app:name:ipad" content="Tumblr">
-<meta name="twitter:app:name:googleplay" content="Tumblr">
-<meta name="twitter:app:id:iphone" content="305343404">
-<meta name="twitter:app:id:ipad" content="305343404">
-<meta name="twitter:app:id:googleplay" content="com.tumblr">
 {block:Twitter}
-<meta name="twitter:creator" content="{TwitterUsername}">
+  <meta name="twitter:creator" content="{TwitterUsername}">
+  <meta name="twitter:site" content="{TwitterUsername}" >
 {/block:Twitter}
-<meta name="twitter:site" content="tumblr" >
 <meta property="og:site_name" content="{Title}">
-<title>{Title}{block:PostSummary} &mdash; {PostSummary}{/block:PostSummary}</title>
-<meta property="og:title" content="{Title}{block:PostSummary} -- {PostSummary}{/block:PostSummary}">
-<meta name="twitter:title" content="{Title}{block:PostSummary} -- {PostSummary}{/block:PostSummary}" >
 {block:Description}
-<meta name="description" content="{MetaDescription}">
-<meta property="og:description" content="{MetaDescription}">
-<meta name="twitter:description" content="{MetaDescription}" >
+  <meta name="description" content="{MetaDescription}">
+  <meta property="og:description" content="{MetaDescription}">
+  <meta name="twitter:description" content="{MetaDescription}" >
 {/block:Description}
 {block:IndexPage}
-  <link rel="canonical" href="{BlogURL}">
-  <meta property="og:url" content="{BlogURL}">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary" >
+  <title>{Title}</title>
+  <meta property="og:title" content="{Title}">
+  <meta name="twitter:title" content="{Title}" >
+  <link rel="canonical" href="{BlogURL}">
+  <meta property="og:url" content="{BlogURL}">
   <meta property="twitter:url" content="{BlogURL}">
   {block:IfLogoImage}
     <meta property="og:image" content="{image:Logo}">
@@ -82,12 +76,15 @@
   {/block:IfLogoImage}
 {/block:IndexPage}
 {block:PermalinkPage}
-<meta property="og:type" content="article">
+  <title>{Title}{block:PostTitle} &mdash; {PostTitle}{/block:PostTitle}</title>
+  <meta property="og:title" content="{Title}{block:PostTitle} -- {PostTitle}{/block:PostTitle}">
+  <meta name="twitter:title" content="{Title}{block:PostTitle} -- {PostTitle}{/block:PostTitle}" >
   <link rel="canonical" href="{Permalink}">
   <meta property="og:url" content="{Permalink}">
   <meta property="twitter:url" content="{Permalink}">
   {block:Posts}
     {block:Text}
+      <meta property="og:type" content="article">
       <meta name="twitter:card" content="summary" >
       {block:IfLogoImage}
         <meta property="og:image" content="{image:Logo}">
@@ -95,6 +92,7 @@
       {/block:IfLogoImage}
     {/block:Text}
     {block:Quote}
+      <meta property="og:type" content="article">
       <meta name="twitter:card" content="summary" >
       {block:IfLogoImage}
         <meta property="og:image" content="{image:Logo}">
@@ -102,6 +100,7 @@
       {/block:IfLogoImage}
     {/block:Quote}
     {block:Link}
+      <meta property="og:type" content="article">
       <meta name="twitter:card" content="summary" >
       {block:IfLogoImage}
         <meta property="og:image" content="{image:Logo}">
@@ -109,6 +108,7 @@
       {/block:IfLogoImage}
     {/block:Link}
     {block:Chat}
+      <meta property="og:type" content="article">
       <meta name="twitter:card" content="summary" >
       {block:IfLogoImage}
         <meta property="og:image" content="{image:Logo}">
@@ -116,6 +116,7 @@
       {/block:IfLogoImage}
     {/block:Chat}
     {block:Answer}
+      <meta property="og:type" content="article">
       <meta name="twitter:card" content="summary" >
       {block:IfLogoImage}
         <meta property="og:image" content="{image:Logo}">
@@ -123,24 +124,29 @@
       {/block:IfLogoImage}
     {/block:Answer}
     {block:Photo}
-      <meta property="og:image" content="{PhotoURL-HighRes}">
+      <meta property="og:type" content="article">
       <meta name="twitter:card" content="photo">
+      <meta property="og:image" content="{PhotoURL-HighRes}">
       <meta property="twitter:image" content="{PhotoURL-HighRes}">
     {/block:Photo}
     {block:Photoset}{block:Photos}
-      <meta property="og:image" content="{PhotoURL-HighRes}">
+      <meta property="og:type" content="article">
       <meta name="twitter:card" content="photo">
+      <meta property="og:image" content="{PhotoURL-HighRes}">
       <meta property="twitter:image" content="{PhotoURL-HighRes}">
     {/block:Photos}{/block:Photoset}
     {block:Panorama}
-      <meta property="og:image" content="{PhotoURL-Panorama}">
+      <meta property="og:type" content="article">
       <meta name="twitter:card" content="photo">
+      <meta property="og:image" content="{PhotoURL-Panorama}">
       <meta property="twitter:image" content="{PhotoURL-Panorama}">
     {/block:Panorama}
     {block:Audio}
+      <meta property="og:type" content="article">
       <meta name="twitter:card" content="summary">
     {/block:Audio}
     {block:Video}
+      <meta property="og:type" content="article">
       <meta name="twitter:card" content="summary">
     {/block:Video}
   {/block:Posts}
