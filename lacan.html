@@ -502,7 +502,7 @@
   {block:PermalinkPage}
     {block:ifShowSharingOptions}<ul class="share">
       <li><strong>{lang:Share this}</strong>:</li>
-      <li><a href="mailto:?Body={Permalink}"><i class="fa fa-envelope-o"></i></a></li>
+      {block:ifEmail}<li><a href="mailto:{text:Email}?Body={Permalink}"><i class="fa fa-envelope-o"></i></a></li>{/block:ifEmail}
       <li><a href="http://www.facebook.com/sharer.php?u={Permalink}" target="_blank"><i class="fa fa-facebook"></i></a></li>
       <li><a href="https://plus.google.com/share?url={Permalink}" target="_blank"><i class="fa fa-google-plus"></i></a></li>
       <li><a href="http://twitter.com/share?url={Permalink}" target="_blank"><i class="fa fa-twitter"></i></a></li>
