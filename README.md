@@ -52,7 +52,7 @@ This theme is licenced under [CC-BY](http://creativecommons.org/licenses/by/4.0/
   + [sanographix/tumblr](https://github.com/sanographix/tumblr)
 * [Platform Updates: New Open Graph Tags for Media Publishers and More](https://developers.facebook.com/blog/post/2013/06/19/platform-updates--new-open-graph-tags-for-media-publishers-and-more/)
 * [Twitterカード | Twitter Developers](https://dev.twitter.com/ja/docs/cards)
-  + [https://dev.twitter.com/docs/cards/validation/validator](https://dev.twitter.com/docs/cards/validation/validator); 検証には WebKit 系のブラウザが必要。
+  + [Card Validator | Twitter Developers](https://dev.twitter.com/docs/cards/validation/validator); 検証には WebKit 系のブラウザが必要。
 
 結局 Twitter Cards はなんだかよく分からなかった。
 そもそも Twitter Cards って何者？ metadata や RDFa とかじゃないよね。
